@@ -1,3 +1,4 @@
+import 'package:animations/components/MyAppBar.dart';
 import 'package:flutter/material.dart';
 import 'package:animations/components/List.dart';
 
@@ -13,30 +14,9 @@ class HomeState extends State<Home> {
     const colorPink = Color(0xFFfce4ec);
     const colorGreen = Color(0xFFe8f5e9);
     return Scaffold(
-      appBar: AppBar(
-        //backgroundColor: colorGreen,
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: <Color>[
-                Colors.greenAccent,
-                Colors.white
-              ]
-            )
-          ),
-        ),
-        title: Center(child: Text('Animations here please', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, wordSpacing:2),)),
-        leading: Icon(
-          Icons.menu,
-        ),
-        iconTheme: IconThemeData(
-            size: 30.0,
-            color: Colors.black,
-            opacity: 10.0
-        ),
-      ),
+      appBar: PreferredSize(
+          preferredSize: const Size.fromHeight(100),
+          child: MyAppBar()),
         body: Container(
             height: size.height,
             decoration: BoxDecoration(
@@ -54,7 +34,8 @@ class HomeState extends State<Home> {
                     decoration: BoxDecoration(
                       color: colorPink,
                     ),
-                    child:Center(child: Text('I am putting here a text ', style: TextStyle( fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black))),
+                    child:Center(child: Text('I am putting here a text ', style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
+                    )),
                   ),
 
 
@@ -67,7 +48,8 @@ class HomeState extends State<Home> {
                         color: Colors.black,
                       ),
                       child: Center(
-                        child: Text('Screen Title', style: TextStyle(fontWeight: FontWeight.normal, color: Colors.white, fontSize: 15, ),
+                        child: Text('Screen Title',  style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.white),
+
                         ),
                       )
                   ),

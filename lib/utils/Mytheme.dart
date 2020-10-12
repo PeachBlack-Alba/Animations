@@ -6,7 +6,7 @@ ThemeData MyTheme () {
     return base.copyWith(
       headline1: base.headline1.copyWith(
         fontFamily: 'Play',
-        fontSize: 20,
+        fontSize: 15,
         color: Colors.black
       )
 

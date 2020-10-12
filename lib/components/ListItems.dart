@@ -39,6 +39,7 @@ class ListItems extends StatelessWidget {
           SizedBox(width: 10.0 * 1.5),
           Text(
             text,
+            style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
           ),
           Spacer(),
           if (hasNavigation)

@@ -41,8 +41,8 @@ flutter:
   fonts:
     - family: Play
       fonts:
-        - asset: fonts/Play-Bold.ttf
-        - asset: fonts/Play-Regular.ttf
+        - asset: lib/assets/fonts/Play-Bold.ttf
+        - asset: lib/assets/fonts/Play-Regular.ttf
   #         style: italic
   #   - family: Trajan Pro
   #
