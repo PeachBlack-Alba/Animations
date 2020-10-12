@@ -28,8 +28,14 @@ class _MyAppBarState extends State<MyAppBar> {
         title: Center(child: Text('Animations here please', style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.bold, color: Colors.black),
         ),
         ),
-        leading: Icon(
-          Icons.menu,
+        leading:
+        GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Icon(
+            Icons.arrow_back_ios,
+          ),
         ),
         iconTheme: IconThemeData(
             size: 30.0,

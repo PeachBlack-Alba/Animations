@@ -1,4 +1,5 @@
 import 'package:animations/screens/Home.dart';
+import 'package:animations/screens/SplashScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Animations',
-      home: Home(),
+      home: SplashScreen(),
     );
   }
 }

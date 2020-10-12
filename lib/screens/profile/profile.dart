@@ -14,8 +14,8 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(50),
-          child: MyAppBar()),
+        preferredSize: const Size.fromHeight(50),
+        child: MyAppBar()),
       body: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(

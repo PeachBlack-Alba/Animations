@@ -1,5 +1,6 @@
 import 'package:animations/animations/FadeIn.dart';
 import 'package:animations/screens/profile/profile.dart';
+import 'package:animations/screens/quiz/QuizBody.dart';
 import 'package:flutter/material.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'ListItems.dart';
@@ -16,7 +17,7 @@ class ListState extends State<List> {
     const colorGreen = Color(0xFFe8f5e9);
     return SingleChildScrollView(
       child: Container(
-        height: 350,
+        height: 430,
         decoration: BoxDecoration(
           gradient:LinearGradient(
               colors: [
@@ -32,8 +33,8 @@ class ListState extends State<List> {
                         FadeIn(1.0, GestureDetector(
                           onTap: () {
                             Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => Profile()),
+                              context,
+                              MaterialPageRoute(builder: (context) => Profile()),
                             );
                           },
                           child: ListItems(
@@ -43,11 +44,14 @@ class ListState extends State<List> {
                         ),),
                         FadeIn(2,GestureDetector(
                           onTap: () {
-                            print('container pressed2');
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => QuizBody()),
+                            );
                           },
                           child: ListItems(
                             icon: LineAwesomeIcons.history,
-                            text: 'Quizz',
+                            text: 'Quiz',
                           ),
                         ),),
                         FadeIn(2.33, GestureDetector(
