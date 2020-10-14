@@ -30,7 +30,8 @@ class ListState extends State<List> {
           padding: const EdgeInsets.all(16.0),
                     child: ListView(
                       children: <Widget>[
-                        FadeIn(1.0, GestureDetector(
+                        FadeIn(
+                          GestureDetector(
                           onTap: () {
                             Navigator.push(
                               context,
@@ -42,7 +43,8 @@ class ListState extends State<List> {
                             text: 'Profile',
                           ),
                         ),),
-                        FadeIn(2,GestureDetector(
+                        FadeIn(
+                          GestureDetector(
                           onTap: () {
                             Navigator.push(
                               context,
@@ -54,7 +56,8 @@ class ListState extends State<List> {
                             text: 'Quiz',
                           ),
                         ),),
-                        FadeIn(2.33, GestureDetector(
+                        FadeIn(
+                          GestureDetector(
                           onTap: () {
                             print('container pressed3');
                           },
@@ -63,7 +66,8 @@ class ListState extends State<List> {
                             text: 'More things',
                           ),
                         ),),
-                        FadeIn(2.66,GestureDetector(
+                        FadeIn(
+                          GestureDetector(
                           onTap: () {
                             print('container pressed4');
                           },

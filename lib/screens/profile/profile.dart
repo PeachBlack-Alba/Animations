@@ -32,7 +32,8 @@ class _ProfileState extends State<Profile> {
           padding: const EdgeInsets.all(16.0),
           child: ListView(
             children: <Widget>[
-              FadeIn(1.0, GestureDetector(
+              FadeIn(
+                GestureDetector(
                 onTap: () {
                   print('container pressed');
                 },
@@ -42,7 +43,8 @@ class _ProfileState extends State<Profile> {
                 ),
               ),),
 
-              FadeIn(2,GestureDetector(
+              FadeIn(
+                GestureDetector(
                 onTap: () {
                   print('container pressed2');
                 },
@@ -52,7 +54,8 @@ class _ProfileState extends State<Profile> {
                 ),
               ),),
 
-              FadeIn(2.33, GestureDetector(
+              FadeIn(
+                GestureDetector(
                 onTap: () {
                   print('container pressed3');
                 },
@@ -62,7 +65,8 @@ class _ProfileState extends State<Profile> {
                 ),
               ),),
 
-              FadeIn(2.66,GestureDetector(
+              FadeIn(
+                GestureDetector(
                 onTap: () {
                   print('container pressed4');
                 },
@@ -72,7 +76,8 @@ class _ProfileState extends State<Profile> {
                 ),
               ),),
 
-              FadeIn(4,GestureDetector(
+              FadeIn(
+                GestureDetector(
                 onTap: () {
                   print('container pressed5');
                 },
@@ -82,7 +87,8 @@ class _ProfileState extends State<Profile> {
                 ),
               ),),
 
-              FadeIn(4.5,GestureDetector(
+              FadeIn(
+                GestureDetector(
                 onTap: () {
                   print('container pressed6');
                 },

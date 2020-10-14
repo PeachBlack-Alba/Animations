@@ -5,24 +5,52 @@ import 'package:supercharged/supercharged.dart';
 
 
 enum AniProps { opacity, translateX }
+var globalCounter = 0;
 
-class FadeIn extends StatelessWidget {
-  final double delay;
+class FadeIn extends StatefulWidget {
+
   final Widget child;
+  FadeIn(this.child);
 
-  FadeIn(this.delay, this.child);
 
   @override
+  _FadeInState createState() => _FadeInState();
+}
+
+class _FadeInState extends State<FadeIn> {
+  @override
   Widget build(BuildContext context) {
+
+    /*   var counter = 0;
+    void incrementCounter() {
+      setState(() {
+        counter ++;
+        print('Counter added');
+        return counter.toInt();
+      });
+    }*/
+
+    /* Reset() {
+      globalCounter = 0;
+    }*/
+
+
+    var delaySecs = globalCounter;
+    globalCounter+=1;
+    print('Estoy aqui posicionada $globalCounter');
+
+    const durationSecs = 0.5;
+    const opacityFade = 0.0;
+    const translateXFade = 130.0;
     final tween = MultiTween<AniProps>()
-      ..add(AniProps.opacity, 0.0.tweenTo(1.0))
-      ..add(AniProps.translateX, 130.0.tweenTo(0.0));
+      ..add(AniProps.opacity, opacityFade.tweenTo(1.0))
+      ..add(AniProps.translateX, translateXFade.tweenTo(0.0));
 
     return PlayAnimation<MultiTweenValues<AniProps>>(
-      delay: (300 * delay).round().milliseconds,
-      duration: 500.milliseconds,
+      delay: (delaySecs).round().seconds,
+      duration: durationSecs.seconds,
       tween: tween,
-      child: child,
+      child: widget.child,
       builder: (context, child, value) => Opacity(
         opacity: value.get(AniProps.opacity),
         child: Transform.translate(
@@ -32,4 +60,5 @@ class FadeIn extends StatelessWidget {
       ),
     );
   }
+
 }

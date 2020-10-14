@@ -55,7 +55,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      FadeIn(1.0,
+                      FadeIn(
                         Image(
                           image: AssetImage('lib/assets/images/logored.png'),
                         ),
@@ -64,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       Padding(
                         padding: EdgeInsets.only(top: 10.0),
                       ),
-                      FadeIn(2,
+                      FadeIn(
                         Text(
                           'Welcome to your new home',
                             style:TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black)
@@ -79,11 +79,12 @@ class _SplashScreenState extends State<SplashScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    CircularProgressIndicator(),
+                    FadeIn(
+                        CircularProgressIndicator()),
                     Padding(
                       padding: EdgeInsets.only(top: 20.0),
                     ),
-                    FadeIn(3,
+                    FadeIn(
                       Text(
                         'Loading',
                         softWrap: true,
