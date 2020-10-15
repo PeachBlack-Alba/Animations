@@ -23,7 +23,7 @@ class ToggleState extends State<Toggle> {
       width: 100.0,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0),
-        color: toggleValue ? Colors.greenAccent[100] : Colors.redAccent[100].withOpacity(0.3)
+        color: toggleValue ? Colors.greenAccent[100] : Colors.white.withOpacity(0.3)
       ),
       child: Stack(
         children: <Widget> [

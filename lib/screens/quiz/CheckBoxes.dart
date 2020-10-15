@@ -7,103 +7,95 @@ class CheckBoxes extends StatefulWidget {
 
 
   @override
-  _CheckBoxesState createState() => _CheckBoxesState();
+  CheckBoxesState createState() => CheckBoxesState();
 }
 
-class _CheckBoxesState extends State<CheckBoxes> {
+class CheckBoxesState extends State<CheckBoxes> {
+  static const colorPink = Color(0xFFfce4ec);
 
-  final _user = User();
   @override
   Widget build(BuildContext context) {
-
     return Container(
       margin: EdgeInsets.symmetric(
         horizontal: 20.0,
         vertical: 20.0,
       ),
-      //color: Colors.greenAccent,
+      decoration: BoxDecoration(
+        color: colorPink,
+        borderRadius: BorderRadius.circular(22),
+      ),
       height: 500 ,
       child: Stack(
         //alignment: Alignment.bottomCenter,
         children: <Widget>[
-          Container (
-            height: 500,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(22.0),
-            ),
-            child: Container (
-              height: 500,
-              margin: EdgeInsets.only(right: 10,),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(22),
-              ),
-            ),
-          ),
           Center(
             child: Positioned (
               child: SizedBox(
                 height: 500.0,
                 //width: size.width,
-                child: Column(
+                  child: Column(
                   children: <Widget>[
                     SizedBox(height: 20.0),
                     Text('Interests',
                       style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Container(
                             child:  Text('Cooking',
                               style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
                             ),
                         ),
-                        SizedBox(width:170.0),
+                       // SizedBox(width:170.0),
                         Toggle(),
                       ],
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Container(
-                          child:  Text('hiking',
+                          child:  Text('Hiking',
                             style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
                           ),
                         ),
-                        SizedBox(width:190.0),
+                       // SizedBox(width:190.0),
                         Toggle(),
                       ],
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Container(
-                          child:  Text('traveling',
+                          child:  Text('Traveling',
                             style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
                           ),
                         ),
-                        SizedBox(width:170.0),
+                       // SizedBox(width:170.0),
                         Toggle(),
                       ],
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Container(
-                          child:  Text('playing an instrument',
+                          child:  Text('Music',
                             style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
                           ),
                         ),
-                        SizedBox(width:50.0),
+                       // SizedBox(width:50.0),
                         Toggle(),
                       ],
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Container(
-                          child:  Text('yoga',
+                          child:  Text('Yoga',
                             style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
                           ),
                         ),
-                        SizedBox(width:205.0),
+                     //   SizedBox(width:205.0),
                         Toggle(),
                       ],
                     ),
