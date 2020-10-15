@@ -23,7 +23,7 @@ class ToggleState extends State<Toggle> {
       width: 100.0,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0),
-        color: toggleValue ? Colors.greenAccent[100] : Colors.white.withOpacity(0.3)
+        color: Colors.white
       ),
       child: Stack(
         children: <Widget> [
@@ -46,9 +46,9 @@ class ToggleState extends State<Toggle> {
                       return ScaleTransition(
                           child: child, scale: animation);
                     },
-                    child: toggleValue ? Icon(Icons.check, color: Colors.green, size: 35.0,
+                    child: toggleValue ? Icon(Icons.check, color: Colors.greenAccent, size: 35.0,
                         key: UniqueKey()
-                    ) :Icon(Icons.cancel_outlined, color: Colors.red, size: 35.0,
+                    ) :Icon(Icons.cancel_outlined, color: Colors.pinkAccent, size: 35.0,
                     key: UniqueKey()
                     ),
                   ),

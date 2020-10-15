@@ -39,18 +39,18 @@ class CheckBoxesState extends State<CheckBoxes> {
                     Text('Interests',
                       style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Container(
-                            child:  Text('Cooking',
-                              style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
-                            ),
-                        ),
-                       // SizedBox(width:170.0),
-                        Toggle(),
-                      ],
-                    ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Container(
+                              child:  Text('Cooking',
+                                style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
+                              ),
+                          ),
+                         // SizedBox(width:170.0),
+                          Toggle(),
+                        ],
+                      ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
