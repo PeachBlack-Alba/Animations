@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:supercharged/supercharged.dart';
 
-
-
 enum AniProps { opacity, translateX }
 var globalCounter = 0;
 
@@ -12,7 +10,6 @@ class FadeIn extends StatefulWidget {
   final Widget child;
   FadeIn(this.child);
 
-
   @override
   _FadeInState createState() => _FadeInState();
 }
@@ -20,20 +17,6 @@ class FadeIn extends StatefulWidget {
 class _FadeInState extends State<FadeIn> {
   @override
   Widget build(BuildContext context) {
-
-    /*   var counter = 0;
-    void incrementCounter() {
-      setState(() {
-        counter ++;
-        print('Counter added');
-        return counter.toInt();
-      });
-    }*/
-
-    /* Reset() {
-      globalCounter = 0;
-    }*/
-
 
     var delaySecs = globalCounter;
     globalCounter+=1;
@@ -60,5 +43,4 @@ class _FadeInState extends State<FadeIn> {
       ),
     );
   }
-
 }

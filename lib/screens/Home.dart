@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:animations/components/List.dart';
 
 class Home extends StatefulWidget {
+
   @override
   HomeState createState() => HomeState();
 }

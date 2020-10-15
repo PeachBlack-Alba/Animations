@@ -1,3 +1,4 @@
+import 'package:animations/animations/Toggle.dart';
 import 'package:flutter/material.dart';
 import 'CategoryList.dart';
 import 'User.dart';
@@ -47,42 +48,65 @@ class _CheckBoxesState extends State<CheckBoxes> {
                 child: Column(
                   children: <Widget>[
                     SizedBox(height: 20.0),
-                    Text('Interests', style: TextStyle( fontSize: 20.0, fontWeight: FontWeight.bold)),
-                    CheckboxListTile(
-                        title: const Text('Cooking'),
-                        value: _user.passions[User.PassionCooking],
-                        onChanged: (val) {
-                          setState(() =>
-                          _user.passions[User.PassionCooking] = val);
-                        }),
-                    CheckboxListTile(
-                        title: const Text('Traveling'),
-                        value: _user.passions[User.PassionTraveling],
-                        onChanged: (val) {
-                          setState(() => _user
-                              .passions[User.PassionTraveling] = val);
-                        }),
-                    CheckboxListTile(
-                        title: const Text('Hiking'),
-                        value: _user.passions[User.PassionHiking],
-                        onChanged: (val) {
-                          setState(() =>
-                          _user.passions[User.PassionHiking] = val);
-                        }),
-                    CheckboxListTile(
-                        title: const Text('Music'),
-                        value: _user.passions[User.PassionMusic],
-                        onChanged: (val) {
-                          setState(() =>
-                          _user.passions[User.PassionMusic] = val);
-                        }),
-                    CheckboxListTile(
-                        title: const Text('Yoga'),
-                        value: _user.passions[User.PassionYoga],
-                        onChanged: (val) {
-                          setState(() =>
-                          _user.passions[User.PassionYoga] = val);
-                        })
+                    Text('Interests',
+                      style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.bold, color: Colors.black),
+                    ),
+
+                    Row(
+                      children: [
+                        Container(
+                            child:  Text('Cooking',
+                              style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
+                            ),
+                        ),
+                        SizedBox(width:170.0),
+                        Toggle(),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          child:  Text('hiking',
+                            style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
+                          ),
+                        ),
+                        SizedBox(width:190.0),
+                        Toggle(),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          child:  Text('traveling',
+                            style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
+                          ),
+                        ),
+                        SizedBox(width:170.0),
+                        Toggle(),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          child:  Text('playing an instrument',
+                            style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
+                          ),
+                        ),
+                        SizedBox(width:50.0),
+                        Toggle(),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          child:  Text('yoga',
+                            style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
+                          ),
+                        ),
+                        SizedBox(width:205.0),
+                        Toggle(),
+                      ],
+                    ),
                   ],
                 ),
               ),
