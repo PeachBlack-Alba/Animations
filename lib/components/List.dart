@@ -1,4 +1,5 @@
 import 'package:animations/animations/FadeIn.dart';
+import 'package:animations/screens/ImageGallery.dart';
 import 'package:animations/screens/profile/profile.dart';
 import 'package:animations/screens/quiz/QuizBody.dart';
 import 'package:flutter/material.dart';
@@ -58,12 +59,15 @@ class ListState extends State<List> {
                         ),),
                         FadeIn(
                           GestureDetector(
-                          onTap: () {
-                            print('container pressed3');
-                          },
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => ImageGallery()),
+                              );
+                            },
                           child: ListItems(
                             icon: LineAwesomeIcons.question_circle,
-                            text: 'More things',
+                            text: 'Check Images',
                           ),
                         ),),
                         FadeIn(
