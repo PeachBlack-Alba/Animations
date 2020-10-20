@@ -20,7 +20,6 @@ class _FadeInState extends State<FadeIn> {
 
     var delaySecs = globalCounter;
     globalCounter+=1;
-    print('Estoy aqui posicionada $globalCounter');
 
     const durationSecs = 0.5;
     const opacityFade = 0.0;

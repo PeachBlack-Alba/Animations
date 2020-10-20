@@ -46,14 +46,14 @@ class _ImageGalleryState extends State<ImageGallery> {
                   : CrossFadeState.showSecond,
               firstChild: Container(
                 child: Image(
-                  image: AssetImage('lib/assets/images/circleCoWorking.png'),
+                  image: AssetImage('images/circleCoWorking.png'),
                   height: 400.0,
                   width: 400.0,
                   ),
               ),
               secondChild: Container(
                 child: Image(
-                  image: AssetImage('lib/assets/images/circleGym.png'),
+                  image: AssetImage('images/circleGym.png'),
                   height: 400.0,
                   width: 400.0,
                 ),

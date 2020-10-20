@@ -49,40 +49,50 @@ class HomeState extends State<Home> {
               opacity: 10.0
           ),
         ),
-        body: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                  Container(
-                    height: 80,
-                    width: double.infinity,
-                    padding: EdgeInsets.all (10),
-                    decoration: BoxDecoration(
-                      color: colorPink,
-                    ),
-                    child:Center(
-                        child: Text('I am putting here a text ',
-                          style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
-                    )),
-                  ),
-                   Container(
-                     height: 50,
+        body: Container(
+          decoration: BoxDecoration(
+            gradient:LinearGradient(
+                colors: [
+                  colorPink,
+                  colorGreen,
+                ]
+            ),
+          ),
+          child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                    Container(
+                      height: 80,
                       width: double.infinity,
                       padding: EdgeInsets.all (10),
                       decoration: BoxDecoration(
-                        color: Colors.black,
+                        color: colorPink,
                       ),
-                      child: Center(
-                        child: Text('Select a tab',
-                          style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.white),
+                      child:Center(
+                          child: Text('I am putting here a text ',
+                            style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
+                      )),
+                    ),
+                     Container(
+                       height: 50,
+                        width: double.infinity,
+                        padding: EdgeInsets.all (10),
+                        decoration: BoxDecoration(
+                          color: Colors.black,
                         ),
-                      )
-                  ),
-               Container(
-                    width: double.infinity,
-                    child: List(),
-                  ),
-              ],
-            )
+                        child: Center(
+                          child: Text('Select a tab',
+                            style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.white),
+                          ),
+                        )
+                    ),
+                 Container(
+                      width: double.infinity,
+                      child: List(),
+                    ),
+                ],
+              ),
+        )
         );
   }
 }
