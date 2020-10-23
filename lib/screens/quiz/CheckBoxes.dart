@@ -34,8 +34,8 @@ class CheckBoxesState extends State<CheckBoxes> {
                 height: 500.0,
                 //width: size.width,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
-                    SizedBox(height: 20.0),
                     Text('Interests',
                       style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.bold, color: Colors.black),
                     ),
@@ -83,7 +83,6 @@ class CheckBoxesState extends State<CheckBoxes> {
                             style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
                           ),
                         ),
-                       // SizedBox(width:50.0),
                         Toggle(),
                       ],
                     ),
@@ -95,7 +94,6 @@ class CheckBoxesState extends State<CheckBoxes> {
                             style: TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black),
                           ),
                         ),
-                     //   SizedBox(width:205.0),
                         Toggle(),
                       ],
                     ),

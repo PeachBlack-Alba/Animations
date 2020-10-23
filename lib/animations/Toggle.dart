@@ -17,13 +17,15 @@ class ToggleState extends State<Toggle> {
 
   @override
   Widget build(BuildContext context) {
+    const colorGreen = Color(0xFFe8f5e9);
     return AnimatedContainer(
+      padding: EdgeInsets.all(5),
       duration: Duration(milliseconds: 900),
       height: 40.0,
       width: 100.0,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0),
-        color: Colors.white
+        color: colorGreen,
       ),
       child: Stack(
         children: <Widget> [

@@ -31,6 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    const colorPink = Color(0xFFfce4ec);
     return Scaffold(
       body: Stack(
         fit: StackFit.expand,
@@ -80,7 +81,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     FadeIn(
-                        CircularProgressIndicator()),
+                        CircularProgressIndicator(valueColor: AlwaysStoppedAnimation(colorPink),)),
                     Padding(
                       padding: EdgeInsets.only(top: 20.0),
                     ),
