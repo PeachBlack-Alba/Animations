@@ -21,8 +21,8 @@ class ToggleState extends State<Toggle> {
     return AnimatedContainer(
       padding: EdgeInsets.all(5),
       duration: Duration(milliseconds: 900),
-      height: 40.0,
-      width: 100.0,
+      height: 50.0,
+      width: 120.0,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0),
         color: colorGreen,

@@ -12,6 +12,7 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
+    var fadeInCounter = 0;
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(50),
@@ -33,7 +34,8 @@ class _ProfileState extends State<Profile> {
           child: ListView(
             children: <Widget>[
               FadeIn(
-                GestureDetector(
+                delaySecs: 0.5 * fadeInCounter++,
+                child:GestureDetector(
                 onTap: () {
                   print('container pressed');
                 },
@@ -44,7 +46,8 @@ class _ProfileState extends State<Profile> {
               ),),
 
               FadeIn(
-                GestureDetector(
+                delaySecs: 0.5 * fadeInCounter++,
+                child:GestureDetector(
                 onTap: () {
                   print('container pressed2');
                 },
@@ -55,7 +58,8 @@ class _ProfileState extends State<Profile> {
               ),),
 
               FadeIn(
-                GestureDetector(
+                delaySecs: 0.5 * fadeInCounter++,
+                child:GestureDetector(
                 onTap: () {
                   print('container pressed3');
                 },
@@ -66,7 +70,8 @@ class _ProfileState extends State<Profile> {
               ),),
 
               FadeIn(
-                GestureDetector(
+                delaySecs: 0.5 * fadeInCounter++,
+                child:GestureDetector(
                 onTap: () {
                   print('container pressed4');
                 },
@@ -77,7 +82,8 @@ class _ProfileState extends State<Profile> {
               ),),
 
               FadeIn(
-                GestureDetector(
+                delaySecs: 0.5 * fadeInCounter++,
+                child:GestureDetector(
                 onTap: () {
                   print('container pressed5');
                 },
@@ -88,7 +94,8 @@ class _ProfileState extends State<Profile> {
               ),),
 
               FadeIn(
-                GestureDetector(
+                delaySecs: 0.5 * fadeInCounter++,
+                child:GestureDetector(
                 onTap: () {
                   print('container pressed6');
                 },

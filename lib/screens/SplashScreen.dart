@@ -10,6 +10,7 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  var fadeInCounter = 0;
   @override
   void initState() {
     super.initState();
@@ -57,7 +58,9 @@ class _SplashScreenState extends State<SplashScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       FadeIn(
-                        Image(
+                        delaySecs: 0.5 * fadeInCounter++,
+                        translateX: 0.2,
+                        child:Image(
                           image: AssetImage('lib/assets/images/logored.png'),
                         ),
                       ),
@@ -66,7 +69,9 @@ class _SplashScreenState extends State<SplashScreen> {
                         padding: EdgeInsets.only(top: 10.0),
                       ),
                       FadeIn(
-                        Text(
+                        delaySecs: 0.8 * fadeInCounter++,
+                        translateX: 0.4,
+                        child:Text(
                           'Welcome to your new home',
                             style:TextStyle(fontSize: 20, fontFamily: 'Play', fontWeight: FontWeight.normal, color: Colors.black)
                         ),
@@ -81,12 +86,16 @@ class _SplashScreenState extends State<SplashScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     FadeIn(
-                        CircularProgressIndicator(valueColor: AlwaysStoppedAnimation(colorPink),)),
+                        delaySecs: 0.9 * fadeInCounter++,
+                        translateX: 0.6,
+                       child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation(colorPink),)),
                     Padding(
                       padding: EdgeInsets.only(top: 20.0),
                     ),
                     FadeIn(
-                      Text(
+                      delaySecs: 1 * fadeInCounter++,
+                      translateX: 0.8,
+                      child:Text(
                         'Loading',
                         softWrap: true,
                         textAlign: TextAlign.center,
