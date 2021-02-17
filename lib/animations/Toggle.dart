@@ -48,7 +48,7 @@ class ToggleState extends State<Toggle> {
                       return ScaleTransition(
                           child: child, scale: animation);
                     },
-                    child: toggleValue ? Icon(Icons.check, color: Colors.greenAccent, size: 35.0,
+                    child: toggleValue ? Icon(Icons.check, color: Colors.lightGreen, size: 35.0,
                         key: UniqueKey()
                     ) :Icon(Icons.cancel_outlined, color: Colors.pinkAccent, size: 35.0,
                     key: UniqueKey()
