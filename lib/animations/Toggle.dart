@@ -50,7 +50,7 @@ class ToggleState extends State<Toggle> {
                     },
                     child: toggleValue ? Icon(Icons.check, color: Colors.lightGreen, size: 35.0,
                         key: UniqueKey()
-                    ) :Icon(Icons.cancel_outlined, color: Colors.pinkAccent, size: 35.0,
+                    ) :Icon(Icons.cancel_outlined, color: Colors.red, size: 35.0,
                     key: UniqueKey()
                     ),
                   ),
